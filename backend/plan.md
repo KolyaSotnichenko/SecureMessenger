@@ -1,5 +1,0 @@
-- Remove not needed routes √
-- Add push notif √
-- Add admin update (sendNotification field) √
-- After deploy fix avatar urls, host on your server √
-- Host thumbnails too √
