@@ -28,7 +28,7 @@ app.use('/user', userRouter)
 // socket connection
 io.on('connection', onConnect)
 
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true }
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, useMongoClient: true }
 ).then((d) => {
     http.listen(process.env.SERVER_PORT, () => console.log(`Example app listening on port ${process.env.SERVER_PORT}!`))
 }).catch(err => {
