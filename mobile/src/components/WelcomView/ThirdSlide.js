@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     },
     titleText: {
         color: colors.black.one,
-        fontSize: 40,
+        fontSize: 35,
         fontWeight: 'bold'
     },
     descriptionText: {

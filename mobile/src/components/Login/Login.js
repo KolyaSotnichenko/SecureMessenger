@@ -25,7 +25,7 @@ class Login extends Component {
             if (!password || password === '') {
                 setAlertOptions({
                     title: 'Error',
-                    message: 'Password cannot be empty!',
+                    message: 'Пароль не може бути пустим!',
                     showCancelButton: false,
                     showConfirmButton: true,
                     confirmText: 'OK',
@@ -42,7 +42,7 @@ class Login extends Component {
         } catch (error) {
             setAlertOptions({
                 title: 'Error',
-                message: 'Password not correct!',
+                message: 'Пароль неправильний!',
                 showCancelButton: false,
                 showConfirmButton: true,
                 confirmText: 'OK',
@@ -55,17 +55,17 @@ class Login extends Component {
     resetApp = () => {
         const { reset, navigation, setShowAlert, setAlertOptions } = this.props
         setAlertOptions({
-            title: 'Reset App',
-            message: 'This will delete all your local data! Continue?',
+            title: 'Скинути додаток',
+            message: 'Це призведе до видалення всіх ваших локальних даних! Продовжити?',
             showCancelButton: true,
             showConfirmButton: true,
             onConfirmPressed: () => {
                 setShowAlert(false)
                 reset(Constants.installationId)
-                navigation.navigate('SplashScreen')
+                navigation.navigate('WelcomeScreen')
             },
             confirmText: 'OK',
-            cancelText: 'Cancel',
+            cancelText: 'Скасувати',
         })
         setShowAlert(true)
     }
