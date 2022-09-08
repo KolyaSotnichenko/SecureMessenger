@@ -8,7 +8,7 @@ class Guideline extends Component {
         return (
             <View style={styles.guidelineOuterContainer}>
                 <View style={styles.guidelineInnerContainer}>
-                    <Text style={styles.guidelineText}>Navigate to Profile tab on your friend's mobile and scan his QR code</Text>
+                    <Text style={styles.guidelineText}>Перейдіть на вкладку «Профіль» на мобільному телефоні вашого друга та відскануйте його QR-код</Text>
                 </View>
             </View>
         )

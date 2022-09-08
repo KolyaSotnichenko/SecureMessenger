@@ -63,7 +63,6 @@ class InvisibleComponent extends Component {
     initSocket = (admin) => {
         const { setSocket, insertReceivedMessage } = this.props
         const socket = socketIO(BASE_URL)
-        console.log(BASE_URL)
         const setState = (data) => this.setState(data)
         socket.connect()
         socket.on('connect', () => {

@@ -16,7 +16,7 @@ class CancelButton extends Component {
             <View style={styles.cancelOuterContainer}>
                 <TouchableOpacity onPress={this.goBack}>
                     <View style={styles.cancelInnerContainer}>
-                        <Text style={styles.cancelText}>Cancel</Text>
+                        <Text style={styles.cancelText}>Скасувати</Text>
                     </View>
                 </TouchableOpacity>
             </View>

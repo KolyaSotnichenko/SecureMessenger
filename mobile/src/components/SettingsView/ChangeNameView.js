@@ -38,7 +38,7 @@ class ChangeNameView extends Component {
             <GradientBackground>
                 <View style={styles.itemContainer}>
                     <View style={styles.titleContainer}>
-                        <Text style={styles.titleText}>Change Name</Text>
+                        <Text style={styles.titleText}>Змінити ім'я</Text>
                     </View>
                     <View style={styles.inputOuterContainer}>
                         <View style={styles.inputInnerContainer}>
@@ -53,7 +53,7 @@ class ChangeNameView extends Component {
                     <View style={styles.buttonOuterContainer}>
                         <TouchableOpacity onPress={this.onSave}>
                             <View style={styles.buttonInnerContainer}>
-                                <Text style={styles.buttonText}>Save</Text>
+                                <Text style={styles.buttonText}>Зберегти</Text>
                             </View>
                         </TouchableOpacity>
                     </View>

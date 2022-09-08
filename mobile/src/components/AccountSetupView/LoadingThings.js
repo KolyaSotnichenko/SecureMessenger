@@ -76,7 +76,7 @@ class LoadingThings extends Component {
                 <View style={[styles.buttonOuterContainer, { display: done ? 'flex' : 'none' }]}>
                     <TouchableOpacity onPress={this.openApp}>
                         <View style={styles.buttonInnerContainer}>
-                            <Text style={styles.buttonText}>Open App</Text>
+                            <Text style={styles.buttonText}>Відкрити додаток</Text>
                         </View>
                     </TouchableOpacity>
                 </View>

@@ -13,8 +13,8 @@ class AcceptNotifications extends Component {
     showInfo = () => {
         const { setAlertOptions, setShowAlert } = this.props
         setAlertOptions({
-            title: 'Accept Notifications',
-            message: 'If you decide to disable this you won\'t get notifications when app is closed',
+            title: 'Прийняти сповіщення',
+            message: 'Якщо ви вирішите вимкнути це, ви не отримуватимете сповіщень, коли додаток закрито',
             showConfirmButton: true,
             confirmText: 'OK',
         })
@@ -39,7 +39,7 @@ class AcceptNotifications extends Component {
         return (
             <View style={styles.container}>
                 <View style={styles.leftContainer}>
-                    <Text style={styles.itemText}>Accept Notifications</Text>
+                    <Text style={styles.itemText}>Прийняти сповіщення</Text>
                     <TouchableOpacity onPress={this.showInfo}>
                         <View style={styles.infoOuterContainer}>
                             <View style={styles.infoInnerContainer}>

@@ -51,7 +51,7 @@ class ContactsListView extends Component {
             return (
                 <GradientBackground>
                     <View style={{ padding: 20, justifyContent: 'center', alignItems: 'center' }}>
-                        <Text style={{ fontSize: 16, color: colors.black.one }}>No contacts</Text>
+                        <Text style={{ fontSize: 16, color: colors.black.one }}>Немає контактів</Text>
                     </View>
                 </GradientBackground>
             )

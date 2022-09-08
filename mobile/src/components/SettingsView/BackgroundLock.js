@@ -11,8 +11,8 @@ class BackgroundLock extends Component {
     showInfo = () => {
         const { setAlertOptions, setShowAlert } = this.props
         setAlertOptions({
-            title: 'Background Lock',
-            message: 'This will quickly lock your app once you send it to background or lock the screen',
+            title: 'Блокування фону',
+            message: 'Це швидко заблокує вашу програму, коли ви відправите її у фоновий режим або заблокуєте екран',
             showConfirmButton: true,
             confirmText: 'OK',
         })
@@ -32,7 +32,7 @@ class BackgroundLock extends Component {
         return (
             <View style={styles.container}>
                 <View style={styles.leftContainer}>
-                    <Text style={styles.itemText}>Lock When In Background</Text>
+                    <Text style={styles.itemText}>Блокування у фоновому режимі</Text>
                     <TouchableOpacity onPress={this.showInfo}>
                         <View style={styles.infoOuterContainer}>
                             <View style={styles.infoInnerContainer}>

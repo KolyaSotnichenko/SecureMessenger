@@ -22,7 +22,7 @@ const MainTabs = createBottomTabNavigator({
         }),
         navigationOptions: {
             tabBarIcon: ({ tintColor }) => (<Ionicons name="ios-chatbubbles" size={25} color={tintColor} />),
-            tabBarLabel: 'Chats'
+            tabBarLabel: 'Чати'
         },
     },
     ContactsScreen: {
@@ -33,7 +33,7 @@ const MainTabs = createBottomTabNavigator({
         }),
         navigationOptions: {
             tabBarIcon: ({ tintColor }) => (<Ionicons name="md-contacts" size={25} color={tintColor} />),
-            tabBarLabel: 'Contacts'
+            tabBarLabel: 'Контакти'
         },
     },
     MyProfileScreen: {
@@ -44,7 +44,7 @@ const MainTabs = createBottomTabNavigator({
         }),
         navigationOptions: {
             tabBarIcon: ({ tintColor }) => (<Ionicons name="md-person" size={25} color={tintColor} />),
-            tabBarLabel: 'Profile'
+            tabBarLabel: 'Профіль'
         },
     },
 },

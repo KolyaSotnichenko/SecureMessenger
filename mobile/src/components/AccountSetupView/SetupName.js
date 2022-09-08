@@ -12,7 +12,7 @@ class SetupName extends Component {
         if (!full_name || full_name === '') {
             setAlertOptions({
                 title: 'Error', 
-                message: 'full_name needs to be filled!', 
+                message: 'full_name потрібно заповнити!', 
                 showCancelButton: false,
                 showConfirmButton: true, 
                 confirmText: 'OK',
@@ -33,7 +33,7 @@ class SetupName extends Component {
                 <View style={styles.inputOuterContainer}>
                     <View style={styles.inputInnerContainer}>
                         <TextInput style={styles.inputText}
-                            placeholder='Display name'
+                            placeholder="Відображуване ім'я"
                             autoFocus={true}
                             onChangeText={setFullName}
                             onSubmitEditing={this.onSubmit} />

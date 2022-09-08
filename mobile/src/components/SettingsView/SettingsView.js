@@ -16,8 +16,8 @@ class SettingsView extends Component {
     resetApp = () => {
         const { reset, navigation, setShowAlert, setAlertOptions } = this.props
         setAlertOptions({
-            title: 'Reset App',
-            message: 'This will delete all your local data! Continue?',
+            title: 'Скинути додаток',
+            message: 'Це призведе до видалення всіх ваших локальних даних! Продовжити?',
             showCancelButton: true,
             showConfirmButton: true,
             onConfirmPressed: () => {
@@ -26,7 +26,7 @@ class SettingsView extends Component {
                 navigation.navigate('SplashScreen')
             },
             confirmText: 'OK',
-            cancelText: 'Cancel',
+            cancelText: 'Скасувати',
         })
         setShowAlert(true)
     }
@@ -61,22 +61,22 @@ class SettingsView extends Component {
 
                     <TouchableOpacity onPress={this.openChangeName}>
                         <View style={styles.itemContainer}>
-                            <Text style={styles.itemText}>Change Name</Text>
+                            <Text style={styles.itemText}>Змінити ім'я</Text>
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={this.openChangePicture}>
                         <View style={styles.itemContainer}>
-                            <Text style={styles.itemText}>Change Picture</Text>
+                            <Text style={styles.itemText}>Змінити зображення</Text>
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={this.openChangePassword}>
                         <View style={styles.itemContainer}>
-                            <Text style={styles.itemText}>Change Password</Text>
+                            <Text style={styles.itemText}>Змінити пароль</Text>
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={this.resetApp}>
                         <View style={styles.itemContainer}>
-                            <Text style={[styles.itemText, { color: colors.pink.one }]}>Reset App</Text>
+                            <Text style={[styles.itemText, { color: colors.pink.one }]}>Скинути додаток</Text>
                         </View>
                     </TouchableOpacity>
                 </View>

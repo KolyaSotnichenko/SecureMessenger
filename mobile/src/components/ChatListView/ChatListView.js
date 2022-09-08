@@ -39,7 +39,7 @@ class ChatListView extends Component {
                     {
                         !chats || chats.length === 0 ?
                             <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                <Text style={{ fontSize: 18, color: colors.black.two, fontWeight: '500' }}>No chats</Text>
+                                <Text style={{ fontSize: 18, color: colors.black.two, fontWeight: '500' }}>Немає чатів</Text>
                             </View> :
                             chats.map((chat, index) => {
                                 return (

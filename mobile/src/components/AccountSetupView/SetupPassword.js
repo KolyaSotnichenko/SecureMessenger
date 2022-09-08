@@ -27,7 +27,7 @@ class SetupPassword extends Component {
         if (!password || !confirmPassword || password !== confirmPassword) {
             setAlertOptions({
                 title: 'Error', 
-                message: 'Passwords need to be filled and the same!', 
+                message: 'Паролі повинні бути заповнені і однакові!', 
                 showCancelButton: false,
                 showConfirmButton: true, 
                 confirmText: 'OK',
@@ -50,7 +50,7 @@ class SetupPassword extends Component {
                         <TextInput
                             secureTextEntry={true}
                             style={styles.inputText}
-                            placeholder='Password'
+                            placeholder='Пароль'
                             ref={ref => this.passInput = ref}
                             onChangeText={setPassword}
                             onSubmitEditing={() => this.confirmPassInput.focus()} />
@@ -61,7 +61,7 @@ class SetupPassword extends Component {
                         <TextInput
                             secureTextEntry={true}
                             style={styles.inputText}
-                            placeholder='Confirm Password'
+                            placeholder='Підтвердьте пароль'
                             ref={ref => this.confirmPassInput = ref}
                             onChangeText={setConfirmPassword}
                             onSubmitEditing={this.onSubmit} />

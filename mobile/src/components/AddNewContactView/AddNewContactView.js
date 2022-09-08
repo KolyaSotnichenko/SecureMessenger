@@ -33,8 +33,8 @@ class AddNewContactView extends Component {
             return (
                 <GradientBackground style={styles.initialContainer}>
                     {hasCameraPermission === null ?
-                        <Text style={styles.initialText}>Requesting Camera Permission</Text> :
-                        <Text style={styles.initialText}>Camera Permission Not Granted</Text>}
+                        <Text style={styles.initialText}>Запит на дозвіл камери</Text> :
+                        <Text style={styles.initialText}>Дозвіл на камеру не надано</Text>}
                 </GradientBackground>
             )
         }
