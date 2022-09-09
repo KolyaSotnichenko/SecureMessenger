@@ -23,8 +23,8 @@ class QRCodeScanner extends Component {
             const contact = parseQRData(data)
             if (contact) {
                 setAlertOptions({
-                    title: 'Add Contact',
-                    message: `Add ${contact.full_name}?`,
+                    title: 'Додати контакт',
+                    message: `Додати ${contact.full_name}?`,
                     showCancelButton: true,
                     showConfirmButton: true,
                     onConfirmPressed: () => {
@@ -38,7 +38,7 @@ class QRCodeScanner extends Component {
                         setShowAlert(false)
                     },
                     confirmText: 'OK',
-                    cancelText: 'Cancel',
+                    cancelText: 'Скасувати',
                 })
                 setShowAlert(true)
             } else {
