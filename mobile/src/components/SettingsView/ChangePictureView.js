@@ -65,7 +65,7 @@ class ChangePictureView extends Component {
                 <View style={styles.buttonOuterContainer}>
                     <TouchableOpacity onPress={this.onSave}>
                         <View style={styles.buttonInnerContainer}>
-                            <Text style={styles.buttonText}>Save</Text>
+                            <Text style={styles.buttonText}>Зберегти</Text>
                         </View>
                     </TouchableOpacity>
                 </View>

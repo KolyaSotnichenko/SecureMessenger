@@ -2,6 +2,7 @@ import React from 'react'
 import { createBottomTabNavigator } from "react-navigation-tabs"
 import { createStackNavigator } from "react-navigation-stack"
 import { Ionicons } from '@expo/vector-icons'
+import { AntDesign } from '@expo/vector-icons';
 
 import ChatListScreen from '../screens/ChatListScreen'
 import ContactsScreen from '../screens/ContactsScreen'
@@ -32,7 +33,7 @@ const MainTabs = createBottomTabNavigator({
             headerLayoutPreset: "left"
         }),
         navigationOptions: {
-            tabBarIcon: ({ tintColor }) => (<Ionicons name="md-contacts" size={25} color={tintColor} />),
+            tabBarIcon: ({ tintColor }) => (<AntDesign name="contacts" size={25} color={tintColor} />),
             tabBarLabel: 'Контакти'
         },
     },

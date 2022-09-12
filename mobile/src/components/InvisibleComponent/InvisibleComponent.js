@@ -20,18 +20,18 @@ class InvisibleComponent extends Component {
     }
 
     componentDidMount = () => {
-        if (Platform.OS === 'android') {
-            Notifications.dismissAllNotificationsAsync()
-        }
+        // if (Platform.OS === 'android') {
+        //     Notifications.dismissAllNotificationsAsync()
+        // }
         this.initSocket(this.props.admin)
-        this._notificationListener = Notifications.addListener(this._handleNotification)
+        // this._notificationListener = Notifications.addListener(this._handleNotification)
         AppState.addEventListener('change', this._handleAppStateChange)
     }
 
 
     componentWillUnmount = () => {
         this.state.socket.disconnect()
-        this._notificationListener.remove()
+        // this._notificationListener.remove()
         AppState.removeEventListener('change', this._handleAppStateChange)
     }
 
