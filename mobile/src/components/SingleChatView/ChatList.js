@@ -54,7 +54,7 @@ class ChatList extends Component {
         if (messages && messages.length === 0) {
             return (
                 <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-                    <Text style={{ fontSize: 16, color: colors.black.two }}>No messages</Text>
+                    <Text style={{ fontSize: 16, color: colors.black.two }}>Немає повідомлень</Text>
                 </View>)
         }
 
