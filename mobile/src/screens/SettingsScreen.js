@@ -6,7 +6,7 @@ import colors from '../../assets/colors'
 class SettingsScreen extends Component {
     static navigationOptions = ({ navigation }) => {
         return {
-            title: 'Settings',
+            title: 'Налаштування',
             headerStyle: {
                 backgroundColor: colors.gray.two,
                 elevation: 0,

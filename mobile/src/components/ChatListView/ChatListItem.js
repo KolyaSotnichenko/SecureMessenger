@@ -48,7 +48,7 @@ class ChatListItem extends Component {
         const maxChars = 30
 
         const trimmedTxt = decryptedMessage.replace(/\n/g, ' ') // remove new lines which would ruin UI
-        const firstPart = message_type === MESSAGE_SENT ? 'You: ' : ''
+        const firstPart = message_type === MESSAGE_SENT ? 'Ви: ' : ''
         const secondPart = trimmedTxt.substring(0, maxChars)
         const thirdPart = trimmedTxt.length > maxChars ? '...' : ''
         return firstPart + secondPart + thirdPart

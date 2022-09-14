@@ -142,7 +142,7 @@ export const insertReceivedMessage = ({ contact_id, message, message_nonce, time
             if (alertFlag) {
                 showAlert(
                     m.full_name,
-                    "Sent you a new message."
+                    "Надіслав вам нове повідомлення."
                 )
             }
             dispatch(getChats())
