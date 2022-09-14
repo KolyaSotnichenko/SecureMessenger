@@ -20,7 +20,7 @@ class MyProfileScreen extends Component {
 
     static navigationOptions = ({ navigation }) => {
         return {
-            title: 'My profile',
+            title: 'Профіль',
             headerRight: <HeaderRight />,
             headerStyle: {
                 backgroundColor: colors.gray.two,

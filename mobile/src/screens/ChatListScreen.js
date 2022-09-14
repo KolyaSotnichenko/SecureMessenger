@@ -20,7 +20,7 @@ class ChatListScreen extends Component {
 
     static navigationOptions = ({ navigation }) => {
         return {
-            title: 'Messenger',
+            title: 'Чати',
             headerRight: <HeaderRight />,
             headerStyle: {
                 backgroundColor: colors.gray.two,

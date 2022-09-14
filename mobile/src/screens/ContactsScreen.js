@@ -19,7 +19,7 @@ class ContactsScreen extends Component {
 
     static navigationOptions = ({ navigation }) => {
         return {
-            title: 'Contacts',
+            title: 'Контакти',
             headerRight: <HeaderRight />,
             headerStyle: {
                 backgroundColor: colors.gray.two,
